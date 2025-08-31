@@ -1,0 +1,175 @@
+.title {
+  font-size: 32px;
+  font-weight: 800;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin-bottom: 15px;
+  background: linear-gradient(90deg, #4caf50, #2196f3);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glow 3s ease-in-out infinite;
+  letter-spacing: 1px;
+}
+
+img{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+
+/* Subtle Glow Animation */
+@keyframes glow {
+  0%, 100% {
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  }
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    font-family: sans-serif;
+    padding-top: 20px;
+    height: 100vh;
+    transition: background 0.3s , color 0.3s;
+}
+
+body.dark{
+    background-color: #121212;
+    color: #f4f4f4;
+}
+
+.calculator{
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s , color 0.3s;
+
+}
+
+body.dark .calculator {
+  background: #222;
+}
+
+
+#display{
+    width: 100%;
+    height: 50px;
+    background-color: #121212;
+    border-radius: 5px;
+    color: #0f0;
+    text-align: right;
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding: 10px 0;
+
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+
+button{
+    background-color:#444;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 15px;
+    transition: 0.2s;
+}
+
+.special button{
+    width: 100%;
+    background-color: #fbc02d;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 15px;
+    transition: 0.2s;
+}
+
+.special button:hover{
+    background-color: #4caf50;
+}
+
+
+
+button:hover{
+    background-color: #666;
+}
+
+.theme-toggle{
+    margin-bottom: 10px;
+}
+
+.theme-toggle input[type="checkbox"]{
+    margin-right: 5px;
+}
+
+/* Theme Toggle Styling */
+.theme-toggle {
+  display: flex;
+  justify-content: center;
+  width: 280px;
+  margin-bottom: 20px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  background-color: #ccc;
+  border-radius: 30px;
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  transition: background-color 0.4s;
+}
+
+/* The sliding knob with emoji */
+.knob {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  background-color: white;
+  border-radius: 50%;
+  bottom: 3px;
+  left: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: transform 0.4s;
+}
+
+/* Slide knob to right when checked */
+.switch input:checked + .slider .knob {
+  transform: translateX(30px);
+}
+
+/* Change background color when checked */
+.switch input:checked + .slider {
+  background-color: #4caf50;
+}

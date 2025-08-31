@@ -13,7 +13,7 @@ A simple and responsive web calculator with:
 
 ## 🚀 Live Demo
 
-👉 https://ameypethe-basic-calculator.netlify.app
+👉 [Your GitHub Pages link here]
 
 ---
 
@@ -42,5 +42,4 @@ A simple and responsive web calculator with:
 
 ---
 
-## 👨‍💻 Made with ❤️ by Amey Pethe
-
+## 👨‍💻 Made with ❤️ by [Your Name]
