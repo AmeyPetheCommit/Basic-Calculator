@@ -15,7 +15,7 @@ A simple and responsive web calculator with:
 
 ## 🚀 Live Demo
 
-👉 [Your GitHub Pages link here]
+👉 https://ameypethe-basic-calculator.netlify.app
 
 ---
 
@@ -45,4 +45,5 @@ A simple and responsive web calculator with:
 ---
 
 ## 👨‍💻 Made with ❤️ by [Your Name]
+
 
