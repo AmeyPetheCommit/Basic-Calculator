@@ -1,5 +1,7 @@
 # 🧮 Basic Calculator
 
+![License: Proprietary](https://img.shields.io/badge/License-Proprietary-yellow.svg)
+
 A simple and responsive web calculator with:
 
 - Basic math operations (`+`, `-`, `*`, `/`)
@@ -43,3 +45,4 @@ A simple and responsive web calculator with:
 ---
 
 ## 👨‍💻 Made with ❤️ by [Your Name]
+
